@@ -34,7 +34,7 @@ html, body{
     position: fixed;
     z-index: 999;
     background-color: #000000;
-    padding: 25vh 10vw;
+    padding: 20vh 10vw;
 }
 
 .line{
@@ -69,7 +69,7 @@ html, body{
 }
 
 .line h3{
-    font-size: 5.5vw;
+    font-size: 6.5vw;
     text-transform: uppercase;
     text-align: center;
     animation: nowAnime 2s infinite;
@@ -81,7 +81,7 @@ html, body{
         -webkit-text-stroke: transparent;
         opacity: 1;
     }
-    40%{
+    45%{
         font-family: "Plain Light";
         -webkit-text-stroke: transparent;
         opacity: 0;
@@ -90,17 +90,27 @@ html, body{
         font-family: "Silk Serif";
         -webkit-text-stroke: 1px white;
         color:transparent;
-        font-weight: 900;
+        font-weight: 600;
         opacity: 1;
+        transform: translateY(-10px);
     }
     100%{
         font-family: "Silk Serif";
         -webkit-text-stroke: 1px white;
         color:transparent;
-        font-weight: 900;
+        font-weight: 600;
         opacity: 0;
+        transform: translateY(-10px);
+
     }
 }
+.wait{
+    position: absolute;
+    top: 38vw;
+    left: 25vw;
+    overflow:hidden;
+}
+
 
 .main{
     position: relative;

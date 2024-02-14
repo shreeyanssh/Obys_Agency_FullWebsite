@@ -36,3 +36,27 @@ as if the text is coming out of nowhere with each h1 staggering
                 }, 100);
 
 its simple gpt the code if not understood.
+
+3. Main page sliding up the removing the loader.
+
+                 tl.to(".loader",{  //tl is timeline of gsap
+                opacity:0,
+                duration: 0.3,
+                delay: 2.5
+            })
+
+            tl.from(".page1",{
+                delay:0.2,
+                duration:0.5,
+                y:1600,
+                ease: Power4  //Google
+            })
+
+here, we need to turn the opacity down and make sure that
+body has the same color as the loader.
+just move the main page form y = 1400 to orignal postion giving
+the effect as if it moved in.
+
+4. The flicker in the now word was obtained by using the 
+@keyframes.
+
