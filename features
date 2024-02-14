@@ -1,0 +1,38 @@
+1. Text coming out of nowhere on loading screen.......
+
+                Acheived using gsap:-
+                    gsap.from(".line h1",{
+                        y:150,
+                        stagger:0.3
+                    })
+
+                and css:- 
+
+                    .line{
+                        height: fit-content;
+                        overflow: hidden;
+                    }
+
+Here the final position of the div is 150px below the orignal 
+but due to overflow being hidden we cant see it and it looks 
+as if the text is coming out of nowhere with each h1 staggering
+0.3sec behind each other.
+
+
+2.Making the counter using setinterval in js...
+
+                ->Select the element that you want the countdown to 
+                run on.
+
+                let h5timer = document.querySelector(".count h5");
+                let grow = 0;
+                var intervalId = setInterval(function() {
+                    if (grow < 100) {
+                        h5timer.innerHTML = grow++;
+                    } else {
+                        h5timer.innerHTML = grow;
+                        clearInterval(intervalId); // Stop the interval
+                    }
+                }, 100);
+
+its simple gpt the code if not understood.
