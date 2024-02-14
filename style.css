@@ -33,7 +33,7 @@ html, body{
     width: 100%;
     position: fixed;
     z-index: 999;
-    background-color: #0B0B0B;
+    background-color: #000000;
     padding: 25vh 10vw;
 }
 
@@ -41,9 +41,9 @@ html, body{
     height: fit-content;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    gap: 3vw
+    gap: 2.5vw
 }
 
 .count{
@@ -54,13 +54,13 @@ html, body{
 }
 
 .count h5, .count h6{
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-weight: 200;
     font-family: "Silk Serif Light";
 }
 
 .count h5{
-    width: 4vw;
+    width: 4.2vw;
 }
 
 .line h1{
@@ -69,13 +69,42 @@ html, body{
 }
 
 .line h3{
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     text-transform: uppercase;
+    text-align: center;
+    animation: nowAnime 2s infinite;
+}
+
+@keyframes nowAnime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: transparent;
+        opacity: 1;
+    }
+    40%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: transparent;
+        opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px white;
+        color:transparent;
+        font-weight: 900;
+        opacity: 1;
+    }
+    100%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px white;
+        color:transparent;
+        font-weight: 900;
+        opacity: 0;
+    }
 }
 
 .main{
     position: relative;
-    background-color: #151515;
+    background-color: #000000;
 }
 
 .page1{

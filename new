@@ -1,0 +1,10 @@
+1. On Start:-  
+You can include the code that you have written in the timeline by using the on start property.
+Which lets you include a function inside your gsap code.
+
+    onstart: function(){
+    }
+
+like this.
+
+2. 
