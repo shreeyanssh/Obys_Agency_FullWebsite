@@ -21,11 +21,22 @@
     box-sizing: border-box;
     font-family:"Plain Light" ;
     color: white;
+    /* cursor: none; */
 }
 
 html, body{
     height: 100%;
     width: 100%;   
+}
+
+.cursor{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    border:1px solid rgba(255, 255, 255, 0.699);
+    position:fixed;
+    z-index: 100;
+    transform: translate(-50%,-50%);
 }
 
 .loader{
@@ -124,9 +135,108 @@ html, body{
     background-color: #151515;
 }
 
+.page1 .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start p{
+    padding: 3vw;
+}
+
+.page1 .nav img{
+    height: 2.5vw;
+    width: 6vw;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-part2 h4{
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding: 2vw;
+}
+
+.page1 .hero{
+    /* background-color: grey; */
+    width: 70%;
+    margin-left: 30%;
+    overflow: hidden;
+}
+
+.hero:nth-child(2){
+    margin-top: 14vh;
+}
+
+.hero h1{
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+.hero:nth-child(2):before{
+    content: "01";
+    font-family: "Silk Serif Light";
+    position: absolute;
+    font-size: 3vw;
+    left: 20%;
+}
+
+.hero3{
+    display: flex;
+    align-items: center;
+}
+
+.hero3 h2{
+    font-size: 7vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 7vw;
+    border-bottom: 0.5vw solid white;
+    /* transition: all ease 0.3s; */
+}
+
+.hero3 :hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    border-bottom: none;
+}
+
 .page2{
-    position: relative;
     background-color: #151515;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page2 video{
+    height: 100%;
+    width: 100%;
+}
+
+.video-container{
+    height: 70vh;
+    width: 65vw;
+    position: relative;
+    left:35%;
+    top:15%;
+    background: url(Showreel-2022-preview-1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
 }
 
 .page3{

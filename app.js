@@ -33,14 +33,37 @@ function loadingAnimation(){
     tl.from(".page1",{
         delay:0.2,
         duration:0.5,
-        y:1600,
+        y:1500,
         ease: Power4
     })
 
     tl.to(".loader",{
         display:"none"
     })
+
+    tl.from(".nav",{
+        opacity: 0
+    })
+
+    tl.from(".hero h1,.hero3 h2",{
+        y:150,
+        delay:0,
+        stagger:0.1
+    })
 }
 
 loadingAnimation();
 
+let mouseAnimation = function(){
+    document.addEventListener("mousemove", function(pos){
+        gsap.to(".cursor",{
+            left:pos.x,
+            top:pos.y
+        })
+    })
+    
+    Shery.makeMagnet(".nav-part2 h4", {});
+    Shery.makeMagnet(".start p", {});
+}
+
+mouseAnimation();
